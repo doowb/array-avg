@@ -1,49 +1,55 @@
-# array-avg [![NPM version](https://badge.fury.io/js/array-avg.svg)](http://badge.fury.io/js/array-avg)  [![Build Status](https://travis-ci.org/doowb/array-avg.svg)](https://travis-ci.org/doowb/array-avg) 
+# array-avg [![NPM version](https://badge.fury.io/js/array-avg.svg)](http://badge.fury.io/js/array-avg)  [![Build Status](https://travis-ci.org/doowb/array-avg.svg)](https://travis-ci.org/doowb/array-avg)
 
 > Calculate the average of an array of numbers.
 
-## Install with [npm](npmjs.org)
+Install with [npm](https://www.npmjs.com/)
 
-```bash
-npm i array-avg --save
+```sh
+$ npm i array-avg --save
 ```
 
 ## Usage
 
 ```js
-var arrayAvg = require('array-avg');
-```
+var avg = require('array-avg');
 
-## API
-<!-- add a path or glob pattern for files with code comments to use for docs  -->
-{%= apidocs("index.js") %}
+avg([1, 2, 3, 4, 5]);
+//=> 3
+
+avg(['1', '2', 3, '4', 5]);
+//=> 3
+
+avg([1, 'foo', 2, 4, {}, 5]);
+//=> 2
+```
 
 ## Related projects
-<!-- add an array of related projects, then un-escape the helper -->
-{%= related([]) %}  
+
+[array-sum](https://www.npmjs.com/package/array-sum): Add up all of the numbers in an array of numbers. Works when non-numbers are… [more](https://www.npmjs.com/package/array-sum) | [homepage](https://github.com/jonschlinkert/array-sum)
 
 ## Running tests
-Install dev dependencies.
 
-```bash
-npm i -d && npm test
+Install dev dependencies:
+
+```sh
+$ npm i -d && npm test
 ```
 
-
 ## Contributing
-Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/doowb/array-avg/issues)
 
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/doowb/array-avg/issues/new).
 
 ## Author
 
 **Brian Woodward**
- 
+
 + [github/doowb](https://github.com/doowb)
-+ [twitter/doowb](http://twitter.com/doowb) 
++ [twitter/doowb](http://twitter.com/doowb)
 
 ## License
+
 Copyright © 2015 Brian Woodward
-Released under the MIT license
+Released under the MIT license.
 
 ***
 

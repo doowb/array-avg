@@ -20,6 +20,17 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "should": "^7.1.0"
+  },
+  "dependencies": {
+    "array-sum": "^1.0.0"
+  },
+  "verb": {
+    "related": {
+      "list": [
+        "array-sum"
+      ]
+    }
   }
 }

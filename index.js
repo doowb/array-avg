@@ -7,6 +7,11 @@
 
 'use strict';
 
-module.exports = function () {
-  // do stuff
+var sum = require('array-sum');
+
+module.exports = function (arr) {
+  if (!Array.isArray(arr)) {
+    return 0;
+  }
+  return sum(arr) / arr.length;
 };
